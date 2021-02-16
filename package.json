@@ -1,0 +1,15 @@
+{
+  "name": "aaa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browsersync": "browser-sync start -s docs --port 8080 -w docs/*/*.html docs/*/*.css docs/*/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}
