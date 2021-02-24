@@ -25,13 +25,13 @@ body{
 }
 body.gmenu-is-open{
     height: 100vh;
-    overflow-y: hidden;
     padding-right: 15px;
+    overflow-y: hidden;
 }
 a{
+    transition: color 250ms ease, opacity 250ms ease;
     color: color(linkC,base);
     text-decoration: none;
-    transition: color 250ms ease, opacity 250ms ease;
 }
 a:hover{
     color: color(linkC,light);

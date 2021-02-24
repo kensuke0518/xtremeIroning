@@ -2,25 +2,25 @@
 スキル
 */
 #skill-block{
-    background-color: darkorange;
     margin: 50px;
     padding: 20px;
+    background-color: darkorange;
 }
 .skill-bar{
-    background-color: gray;
-    border-radius: 20px;
-    height: 40px;
     position: relative;
     width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: gray;
 }
 [data-skill]{
-    background:linear-gradient(135deg, hsla(150,100%,75%,1) 0%,hsla(300,40%,47%,1) 100%) ;
-    border-radius: 20px;
     display: block;
-    height: 30px;
-    left: 0;
-    padding: 5px 0;
     position: absolute;
     top: 0;
+    left: 0;
     width: 0;
+    height: 30px;
+    padding: 5px 0;
+    border-radius: 20px;
+    background:linear-gradient(135deg, hsla(150,100%,75%,1) 0%,hsla(300,40%,47%,1) 100%) ;
 }

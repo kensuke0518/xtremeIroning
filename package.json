@@ -7,9 +7,8 @@
     "compile:sass": "node-sass src/sass -o docs/css --output-style compressed --source-map true",
     "lint:sass": "stylelint \"src/**/*.scss\"",
     "format:sass": "stylelint --fix \"src/**/*.scss\"",
-    "sort": "postcss src/sass/style.scss -u css-declaration-sorter --order smacss",
-    "mq": "postcss src/sass/style.scss -u css-mqpacker -o docs/css/style.css",
-    "autoprefix": "postcss src/sass/style.scss -u autoprefixer -o docs/css/style.css",
+    "mq": "postcss ./src/**/*.scss -u css-mqpacker",
+    "autoprefix": "postcss ./src/**/*.scss -u autoprefixer",
     "allrun": "run-s format:sass compile:sass mq autoprefix",
     "watch:sass": "chokidar \"src/**/*.scss\" --command \"npm run allrun\"",
     "build": "webpack",
@@ -39,11 +38,15 @@
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^8.3.1",
     "stylelint": "^13.11.0",
+    "stylelint-config-property-sort-order-smacss": "^7.0.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.19.0",
     "webpack": "^5.24.1",
     "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "postcss-scss": "^3.0.4"
   }
 }

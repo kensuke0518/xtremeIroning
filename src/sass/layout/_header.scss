@@ -1,12 +1,12 @@
 header{
-    background: linear-gradient(135deg, hsla(64,100%,75%,1) 0%,hsla(228,83%,70%,1) 50%,hsla(303,40%,47%,1) 100%);
-    box-sizing: border-box;
-    left: 0;
-    padding: 20px 10px;
     position: fixed;
-    top:0;
-    width: 100%;
     z-index:2147483500;
+    top:0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 10px;
+    background: linear-gradient(135deg, hsla(64,100%,75%,1) 0%,hsla(228,83%,70%,1) 50%,hsla(303,40%,47%,1) 100%);
 }
 body{
     padding: 100px 0;
@@ -16,8 +16,8 @@ body{
     scroll-snap-type:y mandatory;
 }
 .sections:nth-child(odd){
-    background-color: #fff;
     display: flex;
+    background-color: #fff;
     text-align: center;
 
 }

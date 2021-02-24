@@ -1,3 +1,5 @@
+const sortOrderSmacss = require('stylelint-config-property-sort-order-smacss/generate');
+
 module.exports = {
     plugins: [
         "stylelint-order",
@@ -9,7 +11,9 @@ module.exports = {
     rules: {
         'color-hex-case': 'lower',
         'color-hex-length': 'short',
-        "order/properties-alphabetical-order": true
+        'order/properties-order': [
+            sortOrderSmacss()
+        ],
     },
 }
 

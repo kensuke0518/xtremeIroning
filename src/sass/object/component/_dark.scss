@@ -3,12 +3,12 @@
 https://www.webcreatorbox.com/tech/dark-mode
 */
 .light-mode{
+    transition: all 1s;
     background: #fff;
     color: #333;
-    transition: all 1s;
 }
 .dark-mode{
+    transition: all 1s;
     background: navy;
     color: #fff;
-    transition: all 1s;
 }
