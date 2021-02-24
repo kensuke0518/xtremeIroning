@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass src/sass -o docs/css --output-style nested --source-map true",
+    "compile:sass": "node-sass src/sass -o docs/css --output-style compressed --source-map true",
     "lint:sass": "stylelint \"src/**/*.scss\"",
     "format:sass": "stylelint --fix \"src/**/*.scss\"",
     "mq": "postcss ./src/**/*.scss -u css-mqpacker",

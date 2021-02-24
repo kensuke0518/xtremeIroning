@@ -16,8 +16,5 @@ body{
     scroll-snap-type:y mandatory;
 }
 .sections:nth-child(odd){
-    display: flex;
-    background-color: #fff;
-    text-align: center;
-
+    background-color: darkgreen;
 }
