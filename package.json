@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass src/sass -o docs/css --output-style compressed --source-map true",
+    "compile:sass": "node-sass src/sass -o docs/css --output-style nested --source-map true",
     "lint:sass": "stylelint \"src/**/*.scss\"",
     "format:sass": "stylelint --fix \"src/**/*.scss\"",
     "mq": "postcss ./src/**/*.scss -u css-mqpacker",
-    "autoprefix": "postcss ./src/**/*.scss -u autoprefixer",
+    "autoprefix": "postcss docs/css/*.css -u autoprefixer -d docs/css/",
     "allrun": "run-s format:sass compile:sass mq autoprefix",
     "watch:sass": "chokidar \"src/**/*.scss\" --command \"npm run allrun\"",
     "build": "webpack",
