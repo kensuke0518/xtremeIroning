@@ -1,0 +1,64 @@
+/*
+ローダー
+https://flex-box.net/js-loader/
+*/
+[data-loader="loader"]{
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top:0;
+    transition: opacity 1s, visibility 1s, transform 1s;
+    visibility: hidden;
+    width: 100%;
+    z-index:2147483630;
+}
+[data-loader="loader"] canvas{
+    left: 0;
+    position: fixed;
+    top:0;
+}
+[data-loader="loader"] .load-pic{
+    background: lightsalmon;
+    height: 100%;
+    transform-origin: center center 0px;
+    transition: opacity 1s, visibility 1s, transform 1s; 
+    transition: transform 1s;
+    width: 50%;
+}
+[data-loader="loader"] .load-left{
+    left: 0;
+    position: fixed;
+    top:0;
+}
+[data-loader="loader"] .load-right{
+    position: fixed;
+    right: 0;
+    top:0;
+}
+[data-loader="loader"].is-show{
+    opacity:1;
+    visibility: visible;
+}
+[data-loader="loader"].is-out .load-left{
+    transform: matrix3d(1,0,0.00,0.001,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+}
+[data-loader="loader"].is-out .load-right{
+    transform: matrix3d(1,0,0.00,-0.001,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+}
+@keyframes canvasout {
+    0% {
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.6);
+    }
+    100%{
+        transform: scale(.1);
+    }
+}
+[data-loader="loader"].is-out canvas{
+    animation-duration: 1s;
+    animation-name: canvasout;
+    animation-timing-function: ease-in-out;
+}

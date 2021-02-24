@@ -1,0 +1,14 @@
+$paddingNum:"";
+@for $i from 1 through 100{
+    @if $i < 10{
+        $paddingNum:"0#{$i}";
+    }
+    @else{
+        $paddingNum:"#{$i}";
+    }
+    .u-pt#{$paddingNum}{padding-top:#{$paddingNum}px;}
+    .u-pr#{$paddingNum}{padding-right:#{$paddingNum}px;}
+    .u-pb#{$paddingNum}{padding-bottom:#{$paddingNum}px;}
+    .u-pl#{$paddingNum}{padding-left:#{$paddingNum}px;}
+    .u-p#{$paddingNum}{padding:#{$paddingNum}px;}
+} 

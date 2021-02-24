@@ -1,0 +1,14 @@
+$marginNum:"";
+@for $i from 1 through 100{
+    @if $i < 10{
+        $marginNum:"0#{$i}";
+    }
+    @else{
+        $marginNum:"#{$i}";
+    }
+    .u-mt#{$marginNum}{margin-top:#{$marginNum}px;}
+    .u-mr#{$marginNum}{margin-right:#{$marginNum}px;}
+    .u-mb#{$marginNum}{margin-bottom:#{$marginNum}px;}
+    .u-ml#{$marginNum}{margin-left:#{$marginNum}px;}
+    .u-m#{$marginNum}{margin:#{$marginNum}px;}
+} 
