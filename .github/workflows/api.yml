@@ -1,0 +1,15 @@
+name: Hello
+on: push
+env:
+  MY_API_KEY_1: ${{secrets.MY_API_KEY}} ## ※1
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    name: Hello
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: run api action
+        env:
+          SECRET_HOGE_2: ${{secrets.MY_API_KEY}}  ## ※2
+        uses: ./.github/actions/api
