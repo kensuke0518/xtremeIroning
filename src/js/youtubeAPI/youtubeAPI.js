@@ -12,7 +12,7 @@
  */
 
 //require('dotenv').config();
-const { MY_API_KEY } = process.env.MY_API_KEY_1;
+console.log("SECRET_HOGE_1 = ", process.env.MY_API_KEY_1);
 const API_KEY = MY_API_KEY;
 
 //const API_KEY = 'AIzaSyD8ETI4HMaR5X1YvR2BMkPTgHjePpL9uHs';
