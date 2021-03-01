@@ -5,7 +5,7 @@ env:
 jobs:
   hello:
     runs-on: ubuntu-latest
-    name: Hello
+    name: API
     steps:
       - name: Checkout
         uses: actions/checkout@master
