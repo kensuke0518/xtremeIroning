@@ -9,6 +9,7 @@
  * https://qiita.com/sayama0402/items/f019cac4bcb7d420505a
  * https://qiita.com/inouet/items/c7d39ac4641c05eec4a0
  * https://knowledge.sakura.ad.jp/23478/
+ * https://qiita.com/HeRo/items/e2d5e3bc3dbe810f0482
  */
 
 //require('dotenv').config();

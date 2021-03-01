@@ -1,0 +1,9 @@
+name: 'my action'
+description: 'my action unit'
+author: 'rcmdnk'
+branding:
+  icon: 'meh'
+  color: 'gray-dark'
+runs:
+  using: 'node12'
+  main: 'index.js'
