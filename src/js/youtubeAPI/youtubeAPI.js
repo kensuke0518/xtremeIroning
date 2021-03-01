@@ -11,14 +11,15 @@
  * https://knowledge.sakura.ad.jp/23478/
  * https://qiita.com/HeRo/items/e2d5e3bc3dbe810f0482
  * https://rcmdnk.com/blog/2020/04/23/computer-git-github/
+ * .env関係
+ * https://h-piiice16.hatenablog.com/entry/2018/09/08/131055
+ * https://qiita.com/HorikawaTokiya/items/c1a476ceeab0bf644311
  */
 
 //require('dotenv').config();
 //const { MY_API_KEY } = process.env;
 const API_KEY = process.env.MY_API_KEY;
-console.log(API_KEY);
-
-//const API_KEY = 'AIzaSyD8ETI4HMaR5X1YvR2BMkPTgHjePpL9uHs';
+//console.log(API_KEY);
 
 //ヒカキンの動画を検索する
 //const url = 'https://www.googleapis.com/youtube/v3/search?type=video&part=snippet&q=HIKAKIN&key=' + API_KEY;
