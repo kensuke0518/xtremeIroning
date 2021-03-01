@@ -13,7 +13,7 @@
  * https://rcmdnk.com/blog/2020/04/23/computer-git-github/
  */
 
-//require('dotenv').config();
+require('dotenv').config();
 const { MY_API_KEY } = process.env;
 const API_KEY = MY_API_KEY;
 
