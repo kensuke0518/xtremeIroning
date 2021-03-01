@@ -1,3 +1,12 @@
+const webpack = require('webpack');
+require('dotenv').config();
+
+const dotenvPlugin = new webpack.DefinePlugin({
+    'process.env': {
+        'MY_API_KEY': JSON.stringify(process.env.MY_API_KEY)
+    }
+});
+
 module.exports = {
     mode: 'development',
     entry: './src/js/index.js',
@@ -23,4 +32,5 @@ module.exports = {
         ]
     },
     target: ["web", "es5"],
+    plugins: [dotenvPlugin]
 };
