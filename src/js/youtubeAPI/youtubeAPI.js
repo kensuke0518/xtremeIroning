@@ -34,7 +34,7 @@ const url = 'http://kwordpress.php.xdomain.jp/test.json';
 export const youtubeAPIFunction = () => {
     fetch(url, {
         mode: 'cors',
-        credentials: 'include'
+        //credentials: 'include'
     })
         .then(res => res.json())
         .then(json => {
