@@ -9,7 +9,7 @@ export const scrollsectionFunction = () => {
     }
     const options = {
         root: null,
-        rootMargin: '0% 0px',
+        rootMargin: '10% 0px',
         threshold: 0
     }
     const intersect = elms => {

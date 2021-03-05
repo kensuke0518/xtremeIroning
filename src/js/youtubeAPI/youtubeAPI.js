@@ -79,21 +79,26 @@ export const youtubeAPIFunction = () => {
                 }
             }
 
-            const items = json['items'];
-            for (item in items) {
-            //for (let item = 0; item < items.length;item++){
-                const data = ['id', 'snippet', 'statistics'];
-                const dataArr = [];
-                //for (d of data) {
-                data.forEach(d => {
-                    dataArr.push(items[item][d]);
-                });
-                const youtubeBox = new YoutubeBox(...dataArr);
-                const wrapItem = [
-                    youtubeBox.idMethod(),
-                    youtubeBox.idThumb()
-                ]
-                youtube_api.appendChild(youtubeBox.idWrap(wrapItem))
+            for (let i in json){
+                const items = json[i];
+                const sec = document.createElement('section');
+                sec.style.display = 'flex';
+                for (let item in items) {
+                //for (let item = 0; item < items.length;item++){
+                    const data = ['id', 'snippet', 'statistics'];
+                    const dataArr = [];
+                    //for (d of data) {
+                    data.forEach(d => {
+                        dataArr.push(items[item][d]);
+                    });
+                    const youtubeBox = new YoutubeBox(...dataArr);
+                    const wrapItem = [
+                        youtubeBox.idMethod(),
+                        youtubeBox.idThumb()
+                    ]
+                    sec.appendChild(youtubeBox.idWrap(wrapItem));
+                }
+                youtube_api.appendChild(sec);
             }
         });
 }
