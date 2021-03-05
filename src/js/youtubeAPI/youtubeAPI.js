@@ -80,8 +80,8 @@ export const youtubeAPIFunction = () => {
             }
 
             const items = json['items'];
-            //for (item in items) {
-            for (let item = 0; item < items.length;item++){
+            for (item in items) {
+            //for (let item = 0; item < items.length;item++){
                 const data = ['id', 'snippet', 'statistics'];
                 const dataArr = [];
                 //for (d of data) {
