@@ -12,9 +12,3 @@ body{
     padding: 100px 0;
 }
 
-.sections{
-    scroll-snap-type:y mandatory;
-}
-.sections:nth-child(odd){
-    background-color: darkgreen;
-}

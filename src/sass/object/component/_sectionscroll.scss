@@ -1,0 +1,8 @@
+.c-sections{
+    scroll-snap-type:y mandatory;
+    background-color: blue;
+    color: #fff;
+}
+.c-sections:nth-child(odd){
+    background-color: darkgreen;
+}

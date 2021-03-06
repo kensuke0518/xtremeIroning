@@ -9,10 +9,13 @@ const dotenvPlugin = new webpack.DefinePlugin({
 
 module.exports = {
     mode: 'development',
-    entry: './src/js/index.js',
+    entry: {
+        'index': './src/js/index.js',
+        'secscr':'./src/js/secscr.js',
+    },
     output: {
         path: `${__dirname}/docs/js`,
-        filename: 'index.js'
+        filename: '[name].js'
     },
     module: {
         rules: [
