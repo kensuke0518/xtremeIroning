@@ -1,14 +1,14 @@
 /* ==========================================================================
 Foundation - @import "foundation/
 ========================================================================== */
-@import "foundation/_variable";
-@import "foundation/_reset";
-@import "foundation/_base";
+@import "foundation/variable";
+@import "foundation/reset";
+@import "foundation/base";
 
 /* ==========================================================================
 Layout - @import "layout/
 ========================================================================== */
-@import "layout/_header";
+@import "layout/header";
 
 /* ==========================================================================
 Object
@@ -16,19 +16,21 @@ Object
 /* -----------------------------------------------------------------
 Component - @import "object/component/ - 接頭辞[c-]
 ----------------------------------------------------------------- */
-@import "object/component/_dark.scss";
-@import "object/component/_gauge.scss";
-@import "object/component/_loader.scss";
-@import "object/component/_sectionscroll.scss";
+@import "object/component/dark.scss";
+@import "object/component/gauge.scss";
+@import "object/component/loader.scss";
+@import "object/component/sectionscroll";
 
 /* -----------------------------------------------------------------
 Project - @import "object/component/ - 接頭辞[p-]
 ----------------------------------------------------------------- */
-
+@import "object/project/animation";
+@import "object/project/animation2";
+@import "object/project/animation3";
 
 /* -----------------------------------------------------------------
-Utility - @import "object/utility - 接頭辞[u-]
+Utility - @import "object/utility/ - 接頭辞[u-]
 ----------------------------------------------------------------- */
-@import "object/utility/_margin";
-@import "object/utility/_padding";
-@import "object/utility/_text";
+@import "object/utility/margin";
+@import "object/utility/padding";
+@import "object/utility/text";

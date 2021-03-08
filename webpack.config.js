@@ -11,7 +11,10 @@ module.exports = {
     mode: 'development',
     entry: {
         'index': './src/js/index.js',
-        'secscr':'./src/js/secscr.js',
+        'secscr': './src/js/secscr.js',
+        'animation': './src/js/animation.js',
+        'animation2': './src/js/animation2.js',
+        'animation3': './src/js/animation3.js',
     },
     output: {
         path: `${__dirname}/docs/js`,
