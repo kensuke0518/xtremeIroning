@@ -15,6 +15,7 @@ module.exports = {
         'animation': './src/js/animation.js',
         'animation2': './src/js/animation2.js',
         'animation3': './src/js/animation3.js',
+        'animation4': './src/js/animation4.js',
     },
     output: {
         path: `${__dirname}/docs/js`,

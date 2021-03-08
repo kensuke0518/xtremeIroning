@@ -1,0 +1,24 @@
+/* ==========================================================================
+Foundation - @import "foundation/
+========================================================================== */
+@import "foundation/variable";
+@import "foundation/reset";
+@import "foundation/base";
+
+body {
+    background: #333;
+}
+
+.container {
+    position: relative;
+}
+
+.rect {
+    display: block;
+    position: relative;
+    top: 200px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: white;
+}
