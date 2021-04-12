@@ -29,7 +29,7 @@ const API_KEY = process.env.MY_API_KEY;
 
 //急上昇の動画を50件取得する
 //const url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&maxResults=50&chart=mostPopular&regionCode=JP&key=' + API_KEY;
-const url = 'http://kwordpress.php.xdomain.jp/test.json';
+const url = 'http://kwordpress.php.xdomain.jp/youtubedata/ranking/test.json';
 
 export const youtubeAPIFunction = () => {
     fetch(url, {

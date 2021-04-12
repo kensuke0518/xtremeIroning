@@ -118,11 +118,11 @@ function init() {
             }, offset);
     }
 
-    let isPlaying = false;
+    let isPlaying = false; //動作中の操作を受付拒否か可能？trueな拒否
 
     function updateSlider(newIndex) {
-        const currentItem = items[current];
-        const newItem = items[newIndex];
+        const currentItem = items[current]; //現在表示中の要素
+        const newItem = items[newIndex]; //nextボタンを押した際の
 
         function callback() {
             currentItem.classList.remove("is-active");
